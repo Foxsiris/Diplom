@@ -1,0 +1,9 @@
+.wrapper_carousel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img{
+  height: 500px;
+  width: 500px;
+}
