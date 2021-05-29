@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <div class="row">
+        <h3>Данные о преподователе</h3>
+        <div class="row g-3 ">
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Имя</label>
+            <input type="text" class="form-control" id="validationCustom01" value="Mark" [(ngModel)]="name" required>
+
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Фамилия</label>
+            <input type="text" class="form-control" id="validationCustom02" value="Otto" [(ngModel)]="surname" required>
+
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Отчество</label>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"  [(ngModel)]="middle_name"required>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label  class="form-label">Дата рождения</label>
+            <input type="date" class="form-control"  [(ngModel)]="age" >
+          </div>
+          <div class="col-md-4">
+            <label  class="form-label">Номер телефона</label>
+            <input type="text" class="form-control"  [(ngModel)]="phone" >
+          </div>
+
+
+        </div>
+
+        <div class="col-12 b_center">
+          <button class="btn btn-primary" type="submit" (click)="updateTeachers()">сохранить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,20 @@
+<div class="container wrap">
+  <div *ngFor="let oneItem of teacher">Руководитель: {{oneItem.name}} {{oneItem.surname}} {{oneItem.middle_name}}</div>
+  <table  border="1">
+    <tr>
+      <td>ФИО</td>
+      <td *ngFor="let oneDate of date">{{oneDate}}</td>
+    </tr>
+    <tr *ngFor="let oneKid of allKids">
+      <td>{{oneKid.name}}{{oneKid.surname}}{{oneKid.middle_name}}</td>
+      <td *ngFor="let one of date">
+        <input type="checkbox" (change)="checkBolya(oneKid,one)">
+      </td>
+    </tr>
+  </table>
+  <h4>Информация о заболевших заболевших</h4>
+  <div class="row" *ngFor="let oneSickKid of allSickKids">
+    <div class="info"><p>ФИО:</p>{{oneSickKid.fullName}} <p>День:</p>{{oneSickKid.date}}</div>
+  </div>
+
+</div>

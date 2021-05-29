@@ -1,21 +1,35 @@
-<div class="container">
+<div class="container-fluid wrapp ">
+
+  <div class="container">
     <h1>Новости</h1>
-</div>
-<div class="container">
-  <div class="row ">
-    <div class="card col-4 cards" style="width: 26rem;">
-      <img src="https://st3.depositphotos.com/9880800/16371/i/600/depositphotos_163716102-stock-photo-schoolgirls-sitting-in-class.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <div class="cards_title">
-          <div>
-            <h5 class="card-title">Card title</h5>
-          </div>
-          <div>
-            <p>23.04.21</p>
+  </div>
+  <div class="container" >
+    <div class="row" >
+      <div class="col-6 k">
+        <div class="card  cards" style="width: 19rem; height: 400px;overflow-x:hidden;" *ngFor="let oneLatestNews of showLatestNews" (click)="openNews(oneLatestNews)">
+          <img src="../../assets/Photos/News/{{oneLatestNews.img_url.split(',')[0]}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="cards_title">
+              <div>
+                <h5 class="card-title">{{oneLatestNews.title}}</h5>
+              </div>
+              <div>
+                <p>{{oneLatestNews.date| date: 'dd-MM-yyyy'}}</p>
+              </div>
+            </div>
+            <p class="card-text">{{oneLatestNews.description}}</p>
           </div>
         </div>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
+      <div class="col-2">
+
+      </div>
+      <div class="col-4 j">
+        <img src="../../assets/courses.svg" alt="" id="photo">
+      </div>
+
+
     </div>
   </div>
+
 </div>

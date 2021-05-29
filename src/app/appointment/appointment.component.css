@@ -24,3 +24,15 @@ button{
   text-align: center;
   font-size: 15px;
 }
+.title{
+  font-size: 60px;
+  font-weight: bold;
+}
+.textTitle{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.wrapp{
+  margin: 100px 0;
+}

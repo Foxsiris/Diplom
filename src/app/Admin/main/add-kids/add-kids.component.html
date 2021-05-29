@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="row">
+          <h3>Данные о ребенке</h3>
+          <div class="row g-3 ">
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Имя</label>
+              <input type="text" class="form-control" id="validationCustom01"  [(ngModel)]="name" required>
+
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Фамилия</label>
+              <input type="text" class="form-control" id="validationCustom02"  [(ngModel)]="surname" required>
+
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Отчество</label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"  [(ngModel)]="middle_name"required>
+
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label  class="form-label">Дата рождения</label>
+              <input type="date" class="form-control"  [(ngModel)]="age" >
+
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom05" class="form-label">Пол</label>
+              <select class="form-select" id="validationCustom05"   required [(ngModel)]="gender">
+                <option  value="Мужской">Мужской</option>
+                <option value="Женский">Женский</option>
+              </select>
+            </div>
+
+          </div>
+          <h3>Данные о родителе</h3>
+          <div class="row g-3 ">
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Имя</label>
+              <input type="text" class="form-control" id="validationCustom01"  [(ngModel)]="nameParent" required>
+
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Фамилия</label>
+              <input type="text" class="form-control" id="validationCustom02"  [(ngModel)]="surnameParent" required>
+
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Отчество</label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"  [(ngModel)]="middle_nameParent"required>
+
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label  class="form-label">Дата рождения</label>
+              <input type="date" class="form-control"  [(ngModel)]="ageParent" >
+
+            </div>
+            <div class="col-md-4">
+              <label  class="form-label">Номер телефона</label>
+              <input type="text" class="form-control"  [(ngModel)]="phoneParent" >
+
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom05" class="form-label">Пол</label>
+              <select class="form-select" id="validationCustom05"   required [(ngModel)]="genderParent">
+                <option  value="Мужской">Мужской</option>
+                <option value="Женский">Женский</option>
+              </select>
+            </div>
+
+          </div>
+          <div class="col-12 b_center">
+            <button class="btn btn-primary" type="submit" (click)="addKids()">Добавить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

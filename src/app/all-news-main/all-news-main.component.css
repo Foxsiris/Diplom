@@ -1,0 +1,26 @@
+.z{
+  margin: 15px;
+  cursor: pointer;
+}
+.cards{
+  margin: 10px;
+  cursor:pointer;
+}
+.cards_title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards_title p{
+  font-size: 18px;
+}
+.wrapp{
+  background-image: url("seamless-pattern-of-sea-animals_74565-609.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+.card{
+  border-radius: 20px;
+  padding: 20px;
+}

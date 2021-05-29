@@ -11,3 +11,24 @@
 .cards_title p{
   font-size: 18px;
 }
+.card{
+  border-radius: 20px;
+  padding: 20px;
+}
+.wrapp{
+
+}
+.k{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+#photo{
+  height: 800px;
+  width: 800px;
+}
+.j{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

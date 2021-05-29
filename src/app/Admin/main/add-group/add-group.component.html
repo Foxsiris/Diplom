@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row wrapp_addGroupHead">
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" [(ngModel)]="title"  >
+        <label for="floatingInput">Название группы</label>
+      </div>
+      <div >
+        <label for="">Руководитель группы</label>
+        <select name="" id="" class="form-select" [(ngModel)]="selectedTeache">
+          <option  value="{{oneTeacher.id}}" *ngFor="let oneTeacher of allTeachers">{{oneTeacher.name}} {{oneTeacher.surname}} {{oneTeacher.middle_name}} </option>
+        </select>
+      </div>
+    </div>
+      <div class="row">
+        <div class="card" style="width: 20rem;margin: 10px"  *ngFor="let oneItem of choosenKids">
+          <div class="card-body">
+            <h5 class="card-title">
+              <p>Имя:{{oneItem.el.name}}</p>
+              <p>Фамилия:{{oneItem.el.surname}}</p>
+              <p>Отчество:{{oneItem.el.middle_name}}</p>
+            </h5>
+            <h6>Возраст:{{oneItem.el.age}}</h6>
+            <input type="checkbox" value="{{oneItem.el.id}}" [(ngModel)]="oneItem.cheked">
+          </div>
+        </div>
+      </div>
+  <button (click)="btnCl()" class="btn btn-primary">Создать</button>
+</div>

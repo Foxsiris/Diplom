@@ -1,0 +1,40 @@
+
+.info{
+  background-color: #efc24b;
+  padding: 5px;
+}
+button{
+  background-color: red;
+  border-radius: 9px;
+  padding: 5px;
+  color: white;
+  border: none;
+}
+button:hover{
+  background-color: cornflowerblue;
+  transition: 0.2s;
+  padding: 7px;
+}
+.img_mlad{
+  background-image: url("16388977301594722303-128.png");
+  width: 128px;
+  height: 128px;
+}
+.img_sred{
+  background-image: url("20031024601594722301-128.png");
+  width: 128px;
+  height: 128px;
+}
+.img_star{
+  background-image: url("7963902291594722299-128.png");
+  width: 128px;
+  height: 128px;
+}
+svg{
+  height: 100%;
+  width: 100%;
+}
+.back{
+
+}
+

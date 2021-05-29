@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <div class="row header_news">
+        <h3>Добавить новость</h3>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" [(ngModel)]="title"  >
+          <label for="floatingInput">Заголовок</label>
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 250px" [(ngModel)]="description"></textarea>
+          <label for="floatingTextarea2">Описание</label>
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Выберите фото</label>
+          <input class="form-control" type="file" id="formFile" multiple (change)="selectFiles($event)">
+        </div>
+        <div>
+          <label for="formFile" class="form-label" id="date_info" >Выберите дату</label>
+          <input type="date" class="form-control z" [(ngModel)]="date" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+        </div>
+        <button type="button" class="btn btn-outline-success btn-lg" (click)="changeNews()">Сохранить</button>
+      </div>
+    </div>
+  </div>
+</div>
+

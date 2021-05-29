@@ -1,0 +1,24 @@
+<div>
+  <h3>Список мероприятий</h3>
+</div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="card col-3" style="width: 19rem;" *ngFor="let event of allEvents">
+      <img src="../../../../../assets/Photos/Events/{{event.img_url.split(',')[0]}}" alt="">
+      <div class="card-body">
+        <h5 class="card-title">{{event.title}}</h5>
+        <p class="card-text">{{event.description}}</p>
+      </div>
+      <div class="row but_center">
+        <div class="col">
+          <button class="btn btn-outline-warning btn-lg" (click)="changeNews(event)">Изменить</button>
+        </div>
+        <div class="col">
+          <button class="btn btn-outline-danger btn-lg" (click)="deleteNews(event)">Удалить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

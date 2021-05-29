@@ -1,0 +1,23 @@
+<div>
+    <h3>Список новостей</h3>
+</div>
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="card col-3" style="width: 19rem;" *ngFor="let news of allNews">
+        <img src="../../../../assets/Photos/News/{{news.img_url.split(',')[0]}}" alt="">
+        <div class="card-body">
+          <h5 class="card-title">{{news.title}}</h5>
+          <p class="card-text">{{news.description}}</p>
+        </div>
+       <div class="row but_center">
+         <div class="col">
+           <button class="btn btn-outline-warning btn-lg" (click)="changeNews(news)">Изменить</button>
+         </div>
+         <div class="col">
+           <button class="btn btn-outline-danger btn-lg" (click)="deleteNews(news)">Удалить</button>
+         </div>
+       </div>
+      </div>
+    </div>
+</div>
+

@@ -1,0 +1,42 @@
+
+.otsyp{
+  margin: 30px 0;
+}
+.bac_img{
+  background-image: url("depositphotos_5878805-stock-photo-marine-background.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+.phone_img{
+  background: url("../../assets/back.svg") no-repeat bottom center;
+  content: '';
+  width: 100%;
+  height: 130%;
+  top: -30%;
+  left: 0;
+  background-size: cover;
+  pointer-events: none;
+}
+
+
+svg{
+  position: absolute;
+  z-index: -100;
+  right: 750px;
+  top: 1700px;
+}
+
+img{
+  position: absolute;
+  left: 0%;
+  top: 165%;
+  right: auto;
+  bottom: auto;
+  z-index: -1;
+  width: 800px;
+  opacity: 1;
+  transform: translateY(-180px);
+}
+.z{
+  margin-top: 250px;
+}

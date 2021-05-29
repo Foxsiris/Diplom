@@ -3,16 +3,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  background-color: #ececec;
 }
 #header_info{
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 20px;
 }
+
 .header_item{
   margin: 0 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 .header_item a{
   color: black;

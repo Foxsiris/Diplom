@@ -1,22 +1,39 @@
-<div class="container">
-  <div class="appoitment_wrapper">
-    <div class="row">
-      <div class="col-sm">
-        <input type="text" placeholder="Ваше имя">
-      </div>
-      <div class="col-sm">
-        <input type="text" placeholder="Ваш email">
-      </div>
-      <div class="col-sm">
-        <input type="n" placeholder="Ваш телефон">
-      </div>
+<div class="container-fluid wrapp">
+  <div class="container">
+    <div class="row justify-content-center title">
+       Запишитесь на экскурсию в наш сад
     </div>
-    <div class="row btn_margin">
-      <div class="col-4">
-        <button>Отправить заявку</button>
+    <div class="row  textTitle">
+      <div class="col-3"></div>
+     <div class="col-5"> у нас еще есть места в группах, и мы с удовольствием ждем к нам новых ребят</div>
+      <div class="col-3"></div>
+    </div>
+    <div class="row  textTitle">
+      <div class="col-3"></div>
+      <div class="col-5">заполните форму ниже, мы Вам перезвоним и подробно ответим на все Ваши вопросы</div>
+      <div class="col-3"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="appoitment_wrapper">
+      <div class="row">
+        <div class="col-sm">
+          <input type="text" placeholder="Ваше имя"  [(ngModel)]="name">
+        </div>
+        <div class="col-sm">
+          <input type="text" placeholder="Ваш email" [(ngModel)]="email">
+        </div>
+        <div class="col-sm">
+          <input type="n" placeholder="Ваш телефон" [(ngModel)]="phone_number">
+        </div>
       </div>
-      <div class="col-8">
-        <p>Нажимая на кнопку, вы соглашаетесь на обработку персональных данных на условиях, определенных Политикой Конфиденциальности</p>
+      <div class="row btn_margin">
+        <div class="col-4">
+          <button (click)="addApoitment()">Отправить заявку</button>
+        </div>
+        <div class="col-8">
+          <p>Нажимая на кнопку, вы соглашаетесь на обработку персональных данных на условиях, определенных Политикой Конфиденциальности</p>
+        </div>
       </div>
     </div>
   </div>

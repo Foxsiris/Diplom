@@ -1,0 +1,16 @@
+<h2>Список заявок</h2>
+<div class="wrapper">
+
+  <div class="row" *ngFor="let oneItem of registrationAll">
+    <div class="col item" >
+      <div class="wrapper_apoitment">
+        <p>{{oneItem.name}}</p>
+        <p> {{oneItem.email}}</p>
+        <p>{{oneItem.phone_number}}</p>
+        <button class="btn btn-outline-danger" (click)="deleteRegistration(oneItem)">Удалить</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+

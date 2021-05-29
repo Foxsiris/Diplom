@@ -1,0 +1,101 @@
+
+.photo_pitanie{
+  background-image: url("../icons_benefits/kitchen.png");
+  width: 128px;
+  height: 128px;
+}
+.photo_eat{
+  background-image: url("../icons_benefits/diet.png");
+  width: 128px;
+  height: 128px;
+}
+.photo_area{
+  background-image: url("../icons_benefits/area.png");
+  width: 128px;
+  height: 128px;
+}
+.photo_map{
+  background-image: url("../icons_benefits/map.png");
+  width: 128px;
+  height: 128px;
+}
+.photo_slide{
+  background-image: url("../icons_benefits/slide.png");
+  width: 128px;
+  height: 128px;
+}
+.photo_head{
+  background-image: url("../icons_benefits/z.png");
+  width: 128px;
+  height: 128px;
+}
+.text{
+  font-size: 22px;
+}
+h2{
+  font-size: 45px;
+}
+.wrapp{
+
+  border-radius: 10px;
+}
+.back_img{
+  /*background-image: url("back.jpg");*/
+  background-attachment: fixed;
+  background-repeat: repeat;
+  padding: 150px 0;
+}
+div{
+  color: black;
+
+}
+.border_benefits{
+  background-color: lightskyblue;
+  border: 2px solid white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+.j{
+  padding: 20px;
+  background-color: lightskyblue;
+  border-radius: 20px;
+}
+.one{
+  border-left: none;
+  border-top: none;
+  padding: 15px;
+
+}
+.two{
+  border-top: none;
+  border-right: none;
+  padding: 15px;
+}
+.three{
+  border-left: none;
+  padding: 15px;
+}
+.four{
+  border-right: none;
+  padding: 15px;
+}
+.five{
+  border-left: none;
+  border-bottom: none;
+  padding: 15px;
+}
+.six{
+  border-right: none;
+  border-bottom: none;
+  padding: 15px;
+}
+p{
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+}

@@ -1,0 +1,22 @@
+<div class="wrapp">
+  <app-header></app-header>
+  <div class="container">
+    <div class="row">
+      <div class="card col-4 cards z" style="width: 22rem;height: 450px;overflow-x:hidden;" *ngFor="let oneEvents of allEvents" (click)="showNews(oneEvents)">
+        <img src="../../assets/Photos/News/{{oneEvents.img_url.split(',')[0]}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="cards_title">
+            <div>
+              <h5 class="card-title">{{oneEvents.title}}</h5>
+            </div>
+            <div>
+              <p>{{oneEvents.date}}</p>
+            </div>
+          </div>
+          <p class="card-text">{{oneEvents.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

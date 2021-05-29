@@ -1,0 +1,57 @@
+
+  <div class="wrapp_charts_one">
+    <div>
+      <h2> Информации о детях</h2>
+      <ngx-charts-number-card [view]="viewTwo"
+                              [scheme]="colorSchemeTwo"
+                              [results]="TestObject"
+      ></ngx-charts-number-card>
+    </div>
+  </div>
+  <div class="two_diagrams">
+    <div>
+      <div>
+        <h2>Возраст учитилей</h2>
+      </div>
+      <ngx-charts-bar-vertical  [view]="viewOne"
+                                [scheme]="colorSchemeOne"
+                                [results]="single"
+                                [gradient]="gradient"
+                                [xAxis]="showXAxis"
+                                [yAxis]="showYAxis"
+                                [legend]="showLegend"
+                                [showXAxisLabel]="showXAxisLabel"
+                                [showYAxisLabel]="showYAxisLabel"
+                                [xAxisLabel]="xAxisLabel"
+                                [yAxisLabel]="yAxisLabel"></ngx-charts-bar-vertical>
+    </div>
+   <div>
+     <h2>Инфо</h2>
+     <ngx-charts-pie-chart [view]="viewThree"
+                           [scheme]="colorSchemeTwo"
+                           [legend]="showLegend"
+                           [labels]="true"
+                           [legendPosition]="legendPosition"
+                           [results]="TestObject"></ngx-charts-pie-chart>
+   </div>
+  </div>
+
+  <div class="wrapp_charts_four">
+    <div>
+      <h2>Принятых в год</h2>
+      <ngx-charts-bar-horizontal [view]="viewThree"
+                                 [scheme]="colorSchemeTwo"
+                                 [legend]="showLegend"
+                                 [legendPosition]="legendPosition"
+                                 [xAxis]="true"
+                                 [yAxis]="true"
+                                 [showXAxisLabel]="true"
+                                 [showYAxisLabel]="true"
+                                 [xAxisLabel]="xAxisLabelTwo"
+                                 [yAxisLabel]="yAxisLabelTwo"
+                                 [results]="threeExample"></ngx-charts-bar-horizontal>
+    </div>
+  </div>
+
+
+

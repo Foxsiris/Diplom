@@ -1,0 +1,14 @@
+.container{
+  text-align: center;
+}
+svg{
+  margin-bottom: 25px;
+}
+svg:hover{
+  transform: rotate(45deg);
+  transition: .5s;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s
+}
