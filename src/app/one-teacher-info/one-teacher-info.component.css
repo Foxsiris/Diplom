@@ -1,0 +1,43 @@
+.teachersRamka{
+  background: url('src/assets/teacher.svg') no-repeat;
+  height: 350px;
+  width: 350px;
+  background-size: contain;
+  z-index: -10;
+}
+.teacherPhoto{
+  width: 300px;
+  height: 300px;
+  z-index: 5;
+  margin-top: 50px;
+  border: 10px solid #ececec;
+  cursor: pointer;
+}
+.titleTeacher{
+  font-size: 35px;
+  font-weight: bold;
+}
+.dolznost{
+  margin-top: 80px;
+  padding: 10px 15px;
+  background-color: orange;
+  font-weight: bold;
+  width: 300px;
+}
+.language{
+  font-weight: bold;
+  display: inline;
+  margin-top: 15px;
+}
+.icon{
+  width: 20px;
+  height: 20px;
+}
+.k{
+  margin-top: 15px;
+}
+.j{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}

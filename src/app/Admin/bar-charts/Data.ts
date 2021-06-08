@@ -1,41 +1,37 @@
 export var single = [
   {
-    "name": "Irina",
-    "value": 19
+    "name": "Светлана",
+    "value": 21
   },
   {
-    "name": "Marina",
-    "value": 23
+    "name": "Виктория",
+    "value": 26
   },
   {
-    "name": "Vika",
-    "value": 24
+    "name": "Кристина",
+    "value": 32
   },
   {
-    "name": "Kristina",
-    "value": 44
-  },
-  {
-    "name": "Masha",
-    "value": 55
+    "name": "Анастасия",
+    "value": 37
   },
 ];
 export var twoExample = [
   {
     "name": "Всего",
-    "value": 250
+    "value": 90
   },
   {
     "name": "Детей",
-    "value": 100
+    "value": 86
   },
   {
     "name": "Родителей",
-    "value": 100
+    "value": 86
   },
   {
     "name": "Преподователей",
-    "value": 50
+    "value": 4
   },
 ];
 export var threeExample = [

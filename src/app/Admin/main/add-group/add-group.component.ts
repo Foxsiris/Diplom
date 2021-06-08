@@ -28,7 +28,7 @@ export class AddGroupComponent implements OnInit {
     });
     this.kidService.getAllKids().subscribe(kidsAll=>{
       this.allKids = kidsAll.filter(el=>{
-        return el.group_name ===' '
+        return el.group_name ==='' || el.group_name ===' '
       })
       console.log(this.allKids)
 

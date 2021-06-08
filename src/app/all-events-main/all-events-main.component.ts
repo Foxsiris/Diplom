@@ -22,8 +22,8 @@ export class AllEventsMainComponent implements OnInit {
   }
   showNews(choosenNews:News){
     this.selectedNews = choosenNews
-    localStorage.setItem('selectedNewsMain',JSON.stringify(this.selectedNews))
-    this.router.navigateByUrl('/oneNews')
+    localStorage.setItem('selectedEvent',JSON.stringify(this.selectedNews))
+    this.router.navigateByUrl('/oneEvent')
 
   }
 

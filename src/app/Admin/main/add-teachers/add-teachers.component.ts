@@ -13,6 +13,9 @@ export class AddTeachersComponent implements OnInit {
   middle_name:string;
   age:string;
   phone:string;
+  description:string
+  education:string
+  dolznost:string
   nowAge:number
   selectedTeacher:Teachers
   constructor(private teachersService:TeachersService) { }
@@ -23,6 +26,9 @@ export class AddTeachersComponent implements OnInit {
     this.surname = this.selectedTeacher.surname
     this.middle_name = this.selectedTeacher.middle_name
     this.age = this.selectedTeacher.age
+    this.description = this.selectedTeacher.description
+    this.education = this.selectedTeacher.education
+    this.dolznost = this.selectedTeacher.dolznost
     this.phone = this.selectedTeacher.phone
     localStorage.removeItem('selectedTeacher')
   }
@@ -33,8 +39,9 @@ export class AddTeachersComponent implements OnInit {
 
   addTeachers(){
     this.nowAge = this.get_current_age(this.age)
-    this.teachersService.addTeachers(this.name,this.surname,this.middle_name,this.nowAge,this.phone).subscribe(()=>{
+    this.teachersService.addTeachers(this.name,this.surname,this.middle_name,this.nowAge,this.phone,this.description,this.education,this.dolznost).subscribe(()=>{
 
     })
+
   }
 }

@@ -10,6 +10,7 @@ import {single, threeExample, twoExample} from './Data';
 })
 export class BarChartsComponent implements OnInit {
   dataTeachers:Teachers[]
+  chislo:number
   single:any[]
   twoExample:any[]
   productTwo:any[]
@@ -44,19 +45,19 @@ export class BarChartsComponent implements OnInit {
     let TestObject = [
       {
         'name': 'Всего',
-        'value': 250
+        'value': 90
       },
       {
         'name': 'Детей',
-        'value': 100
+        'value': 86
       },
       {
         'name': 'Родителей',
-        'value': 100
+        'value': 86
       },
       {
         'name': 'Преподователей',
-        'value': 50
+        'value': 4
       },
     ];
     Object.assign(this,{single,TestObject,threeExample})
@@ -65,7 +66,8 @@ export class BarChartsComponent implements OnInit {
   ngOnInit(): void {
      this.teachersService.getAllTeachers().subscribe((teachersItem)=>{
        this.dataTeachers = teachersItem
-      console.log(this.dataTeachers)
+       this.chislo = this.dataTeachers.length
+
     })
   }
 

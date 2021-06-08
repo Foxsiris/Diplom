@@ -7,6 +7,9 @@
       <option value="ABC">Алфавиту</option>
       <option value="AGE">Возрасту</option>
     </select>
+    <select class="form-select" aria-label="Default select example" (click)="sortedByGroup()" [(ngModel)]="selectSortGroup">
+      <option value="{{oneGroup.title}}" *ngFor="let oneGroup of groups">{{oneGroup.title}}</option>
+    </select>
   </div>
 </div>
 <div class="container">
@@ -20,7 +23,6 @@
             Возраст: {{kid.age}} лет
           </div>
           <div>
-            Группа: {{kid.id_gpoup}}
           </div>
           <div></div>
         </div>

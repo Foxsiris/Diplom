@@ -16,8 +16,10 @@
   font-size: 18px;
 }
 .wrapp{
+  background-image: url("src/app/all-news-main/seamless-pattern-of-sea-animals_74565-609.jpg");
   background-attachment: fixed;
   background-repeat: repeat;
+  height: 100vh;
 }
 .card{
   border-radius: 20px;

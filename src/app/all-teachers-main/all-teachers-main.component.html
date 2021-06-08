@@ -1,0 +1,28 @@
+<app-header></app-header>
+<div class="container">
+    <div class="wrapper_teacher">
+
+          <div class="teachersRamka" routerLink="oneTeacher" *ngFor="let oneTeacher of allTeacher" (click)="chosenTeacher(oneTeacher)">
+            <img src="assets/teacherOne.jpeg" alt="" class="teacherPhoto" >
+            <p class="titleTeacher">{{oneTeacher.name}}{{oneTeacher.surname}}</p>
+          </div>
+
+<!--          <div class="teachersRamka">-->
+<!--            <img src="assets/TeacherTwo.png" alt="" class="teacherPhoto">-->
+<!--            <p class="titleTeacher">Лиана Муртазина</p>-->
+<!--          </div>-->
+<!--          <div class="teachersRamka">-->
+<!--            <img src="assets/TeacherThree.png" alt="" class="teacherPhoto">-->
+<!--            <p class="titleTeacher">Анастасия Довиденко</p>-->
+<!--          </div>-->
+<!--          <div class="teachersRamka">-->
+<!--            <img src="assets/TeachersFour.jpg" alt="" class="teacherPhoto">-->
+<!--            <p class="titleTeacher">Игорь Двойников</p>-->
+<!--          </div>-->
+<!--          <div class="teachersRamka">-->
+<!--            <img src="assets/TeachersFive.jpg" alt="" class="teacherPhoto">-->
+<!--            <p class="titleTeacher">Наталья Угрына</p>-->
+<!--          </div>-->
+
+    </div>
+</div>

@@ -14,6 +14,9 @@ export class ChangeTeacherComponent implements OnInit {
   middle_name:string;
   age:string;
   phone:string;
+  description:string
+  education:string
+  dolznost:string
   nowAge:number
   selectedTeacher:Teachers
   constructor(private teachersService:TeachersService) { }
@@ -25,6 +28,9 @@ export class ChangeTeacherComponent implements OnInit {
     this.middle_name = this.selectedTeacher.middle_name
     this.age = this.selectedTeacher.age
     this.phone = this.selectedTeacher.phone
+    this.description = this.selectedTeacher.description
+    this.education = this.selectedTeacher.education
+    this.dolznost = this.selectedTeacher.dolznost
     this.id= this.selectedTeacher.id
     localStorage.removeItem('selectedTeacher')
   }
@@ -35,7 +41,7 @@ export class ChangeTeacherComponent implements OnInit {
 
   updateTeachers(){
     this.nowAge = this.get_current_age(this.age)
-    this.teachersService.updateTeachers(this.name,this.surname,this.middle_name,this.nowAge,this.phone,this.id).subscribe(()=>{
+    this.teachersService.updateTeachers(this.name,this.surname,this.middle_name,this.nowAge,this.phone,this.description,this.education,this.dolznost,this.id).subscribe(()=>{
     })
   }
 

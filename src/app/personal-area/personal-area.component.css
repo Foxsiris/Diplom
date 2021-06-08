@@ -18,3 +18,7 @@ h4{
   border: 2px solid blue;
   border-radius: 10px;
 }
+.showTeacher{
+  font-size: 20px;
+  cursor: pointer;
+}

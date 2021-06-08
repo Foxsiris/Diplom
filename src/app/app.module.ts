@@ -39,6 +39,18 @@ import { AllEventsComponent } from './Admin/main/events/all-events/all-events.co
 import { AddEventsComponent } from './Admin/main/events/add-events/add-events.component';
 import { ChangeEventsComponent } from './Admin/main/events/change-events/change-events.component';
 import { AllEventsMainComponent } from './all-events-main/all-events-main.component';
+import { AutorizationComponent } from './autorization/autorization.component';
+import { ChangeGroupComponent } from './Admin/main/change-group/change-group.component';
+import { OneEventComponent } from './all-events-main/one-event/one-event.component';
+import { TeachersComponent } from './teachers/teachers.component';
+import { AllTeachersMainComponent } from './all-teachers-main/all-teachers-main.component';
+import { OneTeacherInfoComponent } from './one-teacher-info/one-teacher-info.component';
+import { AdditionalInformationComponent } from './additional-information/additional-information.component';
+import { OsnovSvedComponent } from './additional-information/osnov-sved/osnov-sved.component';
+import { PuntkDvaComponent } from './additional-information/puntk-dva/puntk-dva.component';
+import { DocksComponent } from './additional-information/docks/docks.component';
+import { PuntkFourComponent } from './additional-information/puntk-four/puntk-four.component';
+import { PuntkFiveComponent } from './additional-information/puntk-five/puntk-five.component';
 
 
 
@@ -47,7 +59,19 @@ const appRoutes: Routes =[
   { path: '',component:DisplayMainComponent},
   {path:'allNews',component:AllNewsMainComponent},
   {path:'allEvents',component:AllEventsMainComponent},
+  {path:'allTeachers',component:AllTeachersMainComponent},
   {path:'oneNews',component:OneNewsComponent},
+  {path:'info',component:AdditionalInformationComponent,children:[
+      {path:'osnovSved',component:OsnovSvedComponent},
+      {path:'puntkDva',component:PuntkDvaComponent},
+      {path:'punktTree',component:DocksComponent},
+      {path:'punktFour',component:PuntkFourComponent},
+      {path:'punktFive',component:PuntkFiveComponent},
+
+    ]},
+  {path:'oneTeacher',component:OneTeacherInfoComponent},
+  {path:'oneEvent',component:OneEventComponent},
+  {path:'enter',component:AutorizationComponent},
   {path:'personalArea',component:PersonalAreaComponent},
 
 
@@ -65,6 +89,7 @@ const appRoutes: Routes =[
       { path: 'addTeachers',component:AddTeachersComponent},
       { path: 'addGroup',component:AddGroupComponent},
       { path: 'allGroup',component:AllGroupComponent},
+      { path: 'changeGroup',component:ChangeGroupComponent},
       { path: 'graphikPosehaemosti',component:GraphikPosehaemostiComponent},
       { path: 'changeNews',component:ChangeNewsComponent},
       { path: 'addKids',component:AddKidsComponent},
@@ -108,7 +133,19 @@ const appRoutes: Routes =[
         AllEventsComponent,
         AddEventsComponent,
         ChangeEventsComponent,
-        AllEventsMainComponent
+        AllEventsMainComponent,
+        AutorizationComponent,
+        ChangeGroupComponent,
+        OneEventComponent,
+        TeachersComponent,
+        AllTeachersMainComponent,
+        OneTeacherInfoComponent,
+        AdditionalInformationComponent,
+        OsnovSvedComponent,
+        PuntkDvaComponent,
+        DocksComponent,
+        PuntkFourComponent,
+        PuntkFiveComponent
 
     ],
   imports: [

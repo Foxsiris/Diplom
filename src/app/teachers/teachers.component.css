@@ -1,0 +1,35 @@
+.teachersRamka{
+  background: url('src/assets/teacher.svg') no-repeat;
+  height: 350px;
+  width: 350px;
+  background-size: contain;
+  z-index: -10;
+}
+.teacherPhoto{
+  width: 300px;
+  height: 300px;
+  z-index: 5;
+  margin-top: 50px;
+  border: 10px solid #ececec;
+  cursor: pointer;
+}
+.titleTeacher{
+  font-size: 30px;
+}
+#btn{
+  padding: 15px 20px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  font-size: 15px;
+}
+.textDescription{
+}
+h3{
+  font-weight: bolder;
+}
+p{
+  font-family: Georgia, serif;
+}

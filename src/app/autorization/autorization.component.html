@@ -1,0 +1,25 @@
+<div class="modal active">
+  <div class="modal__content">
+    <div>
+      <h2>Войти</h2>
+    </div>
+    <div>
+      <label for="">Логин</label>
+      <div>
+        <input type="text" placeholder="Введите логин" [(ngModel)]="login">
+      </div>
+    </div>
+    <div>
+      <label for="">Пароль</label>
+      <div>
+        <input type="password" placeholder="Введите пароль" [(ngModel)]="password">
+      </div>
+    </div>
+    <div>
+    </div>
+    <div id="btn">
+      <button (click)="autorization()">Войти</button>
+    </div>
+
+  </div>
+</div>

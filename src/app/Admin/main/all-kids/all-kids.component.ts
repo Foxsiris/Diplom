@@ -3,6 +3,8 @@ import {HttpClient} from '@angular/common/http';
 import {KidsService} from '../../../Services/kids.service';
 import {Kid} from '../../../models/kid';
 import {Router} from '@angular/router';
+import {GroupService} from '../../../Services/group.service';
+import {Group} from '../../../models/group';
 
 @Component({
   selector: 'app-all-kids',
@@ -13,10 +15,12 @@ export class AllKidsComponent implements OnInit {
   kids: Kid[] = [];
   selectedKid: Kid;
   selectSort: String;
-
+  selectSortGroup: string;
+  groups:Group[] = []
   constructor(
     private kid: KidsService,
-    private router: Router
+    private router: Router,
+    private groupsService:GroupService
   ) {
   }
 
@@ -24,6 +28,9 @@ export class AllKidsComponent implements OnInit {
     this.kid.getAllKids().subscribe(kidss => {
       this.kids = kidss;
     });
+    this.groupsService.getAllGroups().subscribe(el=>{
+      this.groups = el
+    })
   }
 
   changeKid(chooseKid: Kid) {
@@ -50,7 +57,12 @@ export class AllKidsComponent implements OnInit {
       });
     }
   }
-
+  sortedByGroup() {
+      this.kids = this.kids.filter(el=>{
+          return el.group_name == this.selectSortGroup
+      })
+      console.log(this.kids)
+  }
 
   deleteKid(chooseKid: Kid) {
     this.selectedKid = chooseKid;

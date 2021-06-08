@@ -12,10 +12,10 @@
           <button class="btn btn-outline-info btn-sm " (click)="showSelectedGroup(oneItem)" >Посещаемость</button>
         </div>
         <div class="col-md-auto">
-          <button class="btn btn-outline-warning btn-sm" >Изменить</button>
+          <button class="btn btn-outline-warning btn-sm" (click)="changeGroup(oneItem)" [disabled]="disabledMenu">Изменить</button>
         </div>
         <div class="col-md-auto">
-          <button class="btn btn-outline-danger btn-sm" >Удалить</button>
+          <button class="btn btn-outline-danger btn-sm" (click)="deleteGroup(oneItem)" [disabled]="disabledMenu">Удалить</button>
         </div>
       </div>
     </div>

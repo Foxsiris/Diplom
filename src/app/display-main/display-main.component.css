@@ -15,7 +15,6 @@
   top: -30%;
   left: 0;
   background-size: cover;
-  pointer-events: none;
 }
 
 
@@ -39,4 +38,19 @@ img{
 }
 .z{
   margin-top: 250px;
+}
+.versia{
+  font-size: 26px;
+}
+
+.btn_fz{
+  margin-top: 10px;
+  position: absolute;
+  margin-left: 10px;
+  background-color: #9198e5;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 10px 20px ;
+
 }

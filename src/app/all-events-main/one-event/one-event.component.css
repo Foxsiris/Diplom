@@ -1,0 +1,29 @@
+.carousel-inner img {
+  height: 500px;
+  width: 500px;
+}
+h2{
+  font-size: 60px;
+}
+.z{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.contur{
+  background-color: #efc24b;
+}
+.textDescription{
+  font-size: 22px;
+}
+img{
+  height: 400px;
+  width: 400px;
+}
+.wrapp{
+  background-image: url("src/app/about-us/home-top.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  height: 100vh;
+}

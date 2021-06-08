@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="card col-4 cards z" style="width: 22rem;height: 450px;overflow-x:hidden;" *ngFor="let oneEvents of allEvents" (click)="showNews(oneEvents)">
-        <img src="../../assets/Photos/News/{{oneEvents.img_url.split(',')[0]}}" class="card-img-top" alt="...">
+        <img src="../../assets/Photos/Events/{{oneEvents.img_url.split(',')[0]}}" class="card-img-top" alt="...">
         <div class="card-body">
           <div class="cards_title">
             <div>
@@ -13,7 +13,6 @@
               <p>{{oneEvents.date}}</p>
             </div>
           </div>
-          <p class="card-text">{{oneEvents.description}}</p>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 .carousel-inner img {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
 }
 h2{
   font-size: 60px;
@@ -14,5 +14,16 @@ h2{
 .contur{
   background-color: #efc24b;
 }
+.img_size{
+  height: 200px;
+}
+.textDescription{
+  font-size: 22px;
+}
 
-
+.wrapp{
+  background-image: url("src/app/about-us/home-top.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  height: 100vh;
+}

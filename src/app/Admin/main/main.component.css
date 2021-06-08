@@ -1,3 +1,4 @@
+
 .btn{
   margin-top: 8px;
 }
@@ -7,6 +8,8 @@
 .back_phone{
   background-image: url("seamless-pattern-in-marine-style_2960-57.jpg");
   background-repeat: repeat;
+  height: 100%;
+
 }
 .heaight_row{
   height: 100vh;

@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./display-main.component.css']
 })
 export class DisplayMainComponent implements OnInit {
-
+  versia:boolean = false
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
+  versiaDla(){
+    this.versia = !this.versia
+  }
 }

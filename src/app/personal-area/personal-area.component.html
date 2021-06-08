@@ -19,6 +19,12 @@
         {{onePeople.surname}}
         {{onePeople.middle_name}}
       </div>
+      <div class="showTeacher" (click)="showTeacher()">
+        <h4>Информация о воспитателе</h4>
+        {{oneTeacher[0].name}}
+        {{oneTeacher[0].surname}}
+        {{oneTeacher[0].middle_name}}
+      </div>
     </div>
     <div class="col-4">
       <div class="infoSick">
@@ -29,5 +35,9 @@
         </div>
       </div>
     </div>
+
+    <button (click)="exitArea()">Выйти</button>
+
+
   </div>
 </div>

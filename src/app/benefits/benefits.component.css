@@ -30,7 +30,6 @@
   height: 128px;
 }
 .text{
-  font-size: 22px;
 }
 h2{
   font-size: 45px;
@@ -96,6 +95,9 @@ div{
 }
 p{
   color: white;
-  font-size: 18px;
   margin-top: 10px;
+  font-family: Georgia, serif;
+}
+.i{
+  color: black;
 }

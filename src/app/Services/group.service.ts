@@ -16,14 +16,24 @@ export class GroupService {
 
     })
   }
+  updateGroup(title:string,id_kid:string,id_teacher:number,id:number){
+    this.http.post('http://localhost:3000/updateGroup',{title,id_kid,id_teacher,id}).subscribe(()=>{
+
+    })
+  }
   getAllGroups(){
     return this.http.get<Group[]>('http://localhost:3000/allGroup')
   }
   getAllSickKid(GroupName:string){
     return this.http.get<SickKid[]>(`http://localhost:3000/allSickList/${GroupName}`)
   }
-  addSickKid(fullName:string,date:string,month:string,GroupName:string){
-    this.http.post('http://localhost:3000/addSikcKid',{fullName,date,month,GroupName}).subscribe(()=>{
+  addSickKid(fullName:string,date:string,month:string,GroupName:string,id_kid:number){
+    this.http.post('http://localhost:3000/addSikcKid',{fullName,date,month,GroupName,id_kid}).subscribe(()=>{
+
+    })
+  }
+  deleteSickKid(id_kid:number,date:string){
+    this.http.post('http://localhost:3000/deleteSickKid',{id_kid,date}).subscribe(()=>{
 
     })
   }
@@ -32,6 +42,16 @@ export class GroupService {
   }
   changeGroupNameStatus(id_kid:string,title:string){
     return this.http.post('http://localhost:3000/changeStatus',{id_kid,title}).subscribe(()=>{
+
+    })
+  }
+  changeGroupNameStatusWithDelete(id_kid:string,title:string){
+    return this.http.post('http://localhost:3000/changeStatusWithDelete',{id_kid,title}).subscribe(()=>{
+
+    })
+  }
+  deletGroup(id:number){
+    return this.http.post('http://localhost:3000/deleteGroup',{id}).subscribe(()=>{
 
     })
   }

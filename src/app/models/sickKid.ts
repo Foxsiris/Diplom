@@ -3,4 +3,5 @@ export interface SickKid{
   fullName:string;
   date:string;
   month:string;
+  id_kid:number
 }

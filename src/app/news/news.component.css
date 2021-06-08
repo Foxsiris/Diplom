@@ -13,10 +13,7 @@
 }
 .card{
   border-radius: 20px;
-  padding: 20px;
-}
-.wrapp{
-
+  padding: 10px;
 }
 .k{
   display: grid;
@@ -31,4 +28,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.img_size{
+  height: 200px;
 }

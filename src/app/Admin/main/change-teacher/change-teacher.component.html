@@ -29,10 +29,22 @@
             <label  class="form-label">Номер телефона</label>
             <input type="text" class="form-control"  [(ngModel)]="phone" >
           </div>
-
+          <div class="col-md-4">
+            <label  class="form-label">Должность</label>
+            <select name="" id="" class="form-select" [(ngModel)]="dolznost" >
+              <option  value="Воспитатель">Воспитатель</option>
+            </select>
+          </div>
 
         </div>
-
+        <div class="col-md-12">
+          <label  class="form-label">Образование</label>
+          <input type="text" class="form-control"  [(ngModel)]="education">
+        </div>
+        <label  class="form-label">Описание</label>
+        <div class="col-md-12">
+          <textarea name="" id="" cols="60" rows="10" [(ngModel)]="description"></textarea>
+        </div>
         <div class="col-12 b_center">
           <button class="btn btn-primary" type="submit" (click)="updateTeachers()">сохранить</button>
         </div>

@@ -1,36 +1,28 @@
 <div class="container-fluid wrapper_header">
   <div>
-    LOGO
+
   </div>
   <div id="header_info">
     <div class="header_item">
       <a href="">О нас</a>
     </div>
     <div class="header_item">
-      <a href="" routerLink="allNews">Новости</a>
+      <a href="" routerLink="/allNews">Новости</a>
     </div>
     <div class="header_item">
-      <a href="" routerLink="allEvents">Мероприятия</a>
-    </div>
-
-    <div class="header_item">
-      <a href="">Фото</a>
+      <a href="" routerLink="/allEvents">Мероприятия</a>
     </div>
     <div class="header_item">
-      <a href="">Контакты</a>
+      <a href="" routerLink="/allTeachers">Воспитатели</a>
+    </div>
+    <div class="header_item" [class.test]="disabledEnter">
+      <a href="" routerLink="/enter">Войти</a>
+    </div>
+    <div class="header_item" [class.test]="disabledMenu">
+      <a href="" routerLink="/personalArea">Личный кабинет</a>
     </div>
     <div class="header_item">
-      <a href="" routerLink="personalArea">Личный кабинет</a>
-    </div>
-    <div class="dropdown header_item">
-      <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        Полезная информация
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">Прием воспитаников</a></li>
-        <li><a class="dropdown-item" href="#" >Another action</a></li>
-        <li><a class="dropdown-item" href="#">Сведения об ОО</a></li>
-      </ul>
+      <a href="" routerLink="/info" >Сведения об ОО</a>
     </div>
   </div>
 

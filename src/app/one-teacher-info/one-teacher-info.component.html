@@ -1,0 +1,26 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <div class="teachersRamka">
+        <img src="assets/teacherOne.jpeg" alt="" class="teacherPhoto" routerLink="oneTeacher">
+        <p class="titleTeacher">{{name}}{{surname}}</p>
+      </div>
+      <div class="dolznost">
+          {{dolznost|uppercase}}
+      </div>
+      <div class="k">
+        <img src="assets/lang.svg" alt="" class="icon">
+        Родной язык: <p class="language">Русский</p>
+      </div>
+      <div class="k">
+        <img src="assets/education.svg" alt="" class="icon">
+        Образование: <p class="language">{{education}}</p>
+      </div>
+    </div>
+    <div class="col-4 j">
+     <p>{{description}}</p>
+    </div>
+  </div>
+
+</div>

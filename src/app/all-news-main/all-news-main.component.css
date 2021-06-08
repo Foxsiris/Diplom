@@ -16,11 +16,15 @@
   font-size: 18px;
 }
 .wrapp{
-  background-image: url("seamless-pattern-of-sea-animals_74565-609.jpg");
+  background-image: url("../../assets/Photos/1616580684_37-p-fon-gradient-nezhnii-41.png");
   background-attachment: fixed;
   background-repeat: repeat;
+  height: 100vh;
 }
 .card{
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px;
+}
+.img_size{
+  height: 200px;
 }
